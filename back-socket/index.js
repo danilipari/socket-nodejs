@@ -32,8 +32,20 @@ io.on('connection', (socket) => {
     io.emit('my broadcast', `server: ${msg}`);
   });
 
+  socket.on('send-message', (ojc) => {
+    console.log('ionic-message: ' + JSON.stringify(ojc));
+    io.emit('message', ojc)
+  });
+
   socket.on('refreshList', () => {
     io.emit('refreshList');
+  })
+
+  socket.on('set-name', (name) => {
+    console.log(name, 'name user');
+    io.emit('users-changed', {
+      user: name
+    })
   })
 });
 
