@@ -1,4 +1,4 @@
-# front-socket
+# socket-app
 
 ## Project setup
 ```
@@ -7,7 +7,7 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+ionic start:dev
 ```
 
 ### Compiles and minifies for production
@@ -22,8 +22,7 @@ npm run lint
 
 ### Docs
 ```
-https://deepinder.me/creating-a-real-time-chat-app-with-vue-socket-io-and-nodejs
+https://devdactic.com/ionic-4-socket-io/
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
